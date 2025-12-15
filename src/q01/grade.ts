@@ -1,7 +1,7 @@
 const grade = +process.argv[2];
-if(Number.isNaN(grade) || grade < 0) console.log("Invalid Input");
-
-if(grade >= 80){
+if(Number.isNaN(grade) || grade < 0){
+    console.log("Invalid Input");
+}else if(grade >= 80){
     console.log("Grade is A");
 }else if(grade >= 70){
     console.log("Grade is B");
