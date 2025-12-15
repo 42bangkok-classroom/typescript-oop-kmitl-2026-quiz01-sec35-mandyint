@@ -1,5 +1,5 @@
 const grade = process.argv[2];
-if(Number.isNaN(grade) || +grade < 0 || +grade > 100 || grade === ""){
+if(Number.isNaN(grade) || +grade < 0 || +grade > 100 || grade === "" || String(grade)){
     console.log("Invalid Input");
 }else if(+grade >= 80){
     console.log("Grade is A");
@@ -9,6 +9,6 @@ if(Number.isNaN(grade) || +grade < 0 || +grade > 100 || grade === ""){
     console.log("Grade is C");
 }else if(+grade >= 50){
     console.log("Grade is D");
-}else{
+}else if(+grade < 50){
     console.log("Grade is F");
 }
